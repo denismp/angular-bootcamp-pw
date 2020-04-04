@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-bootcamp-pw';
+  //title = 'angular-bootcamp-pw';
+  private password = '';
+
+  onButtonClick() {
+    //console.log('Button was clicked');
+    this.password = "MY PASSWORD!!!"
+  }
+
+  getPassword() {
+    return this.password;
+  }
 }
