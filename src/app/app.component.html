@@ -6,15 +6,15 @@
 
 <div>
   <label>User Letters</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseLetters()" type="checkbox"/>
 </div>
 <div>
   <label>User Numbers</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseNumbers()" type="checkbox"/>
 </div>
 <div>
   <label>User Symbols</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseSymbols()" type="checkbox"/>
 </div>
 
 <div>
@@ -25,3 +25,5 @@
   <label>User Password</label>
   <input [value]="getPassword()"/>
 </div>
+
+<!-- {{getPassword()}} -->
